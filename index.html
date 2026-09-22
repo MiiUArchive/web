@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiiUArchive - Home</title>
+</head>
+<body>
+
+    <header>
+        <h1>MiiUArchive</h1>
+        <p>A preventive digital preservation initiative for Wii U custom network software, ecosystem components, and documentation.</p>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>About the Project</h2>
+            <p>
+                MiiUArchive is an independent archive project dedicated to ensuring long-term access to custom Wii U server infrastructure and open-source tools. 
+                By maintaining full Git mirrors and release assets, MiiUArchive prevents data loss caused by repository deletions, domain expirations, or service shutdowns.
+            </p>
+        </section>
+
+        <section>
+            <h2>How It Works</h2>
+            <p>
+                The archiving process works automatically using GitHub Actions and public APIs:
+            </p>
+            <ul>
+                <li><strong>Daily Mirroring:</strong> Scheduled tasks (cron jobs) run <code>git clone --mirror</code> operations to preserve full repository histories, branches, and signed commits intact.</li>
+                <li><strong>Release Harvesting:</strong> Automated scripts fetch compiled binaries (e.g., <code>.wms</code>, <code>.wps</code>, <code>.zip</code>) and source code archives directly from release tags.</li>
+                <li><strong>Open Access:</strong> All archived data remains accessible in standard Git formats and plain directory trees under GPLv3 licensing for cloning and documentation. </li>
+            </ul>
+        </section>
+
+        <section id="mirrors">
+            <h2>Archived Organizations</h2>
+            <p>Currently active mirrors:</p>
+            <ul>
+                <li>
+                    <strong>Protarium Network</strong> (Authorized Mirror)
+                    <ul>
+                        <li><a href="archive/org/Protarium-Network/sourcecode/">Browse Source Code Mirrors (.git)</a></li>
+                        <li><a href="archive/org/Protarium-Network/releases/">Browse Release Binaries & Assets</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>
+            <small>
+                MiiUArchive &bull; Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPLv3</a>
+            </small>
+        </p>
+    </footer>
+
+</body>
+</html>
