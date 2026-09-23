@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MiiUArchive - Home</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
 
@@ -20,18 +21,6 @@
                 MiiUArchive is an independent archive project dedicated to ensuring long-term access to custom Wii U server infrastructure and open-source tools. 
                 By maintaining full Git mirrors and release assets, MiiUArchive prevents data loss caused by repository deletions, domain expirations, or service shutdowns.
             </p>
-        </section>
-
-        <section>
-            <h2>How It Works</h2>
-            <p>
-                The archiving process works automatically using GitHub Actions and public APIs:
-            </p>
-            <ul>
-                <li><strong>Daily Mirroring:</strong> Scheduled tasks (cron jobs) run <code>git clone --mirror</code> operations to preserve full repository histories, branches, and signed commits intact.</li>
-                <li><strong>Release Harvesting:</strong> Automated scripts fetch compiled binaries (e.g., <code>.wms</code>, <code>.wps</code>, <code>.zip</code>) and source code archives directly from release tags.</li>
-                <li><strong>Open Access:</strong> All archived data remains accessible in standard Git formats and plain directory trees under GPLv3 licensing for cloning and documentation. </li>
-            </ul>
         </section>
 
         <section id="mirrors">
